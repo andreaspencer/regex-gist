@@ -24,9 +24,13 @@ The regex I will be walking you through is used to match emails. The regex code 
 
 ### Anchors
 The anchor is what starts and ends the regular expression. For the matching email code the anchors are the ^ and the $. This code is specifically saying that we are looking for a match that begins with 
+
 ^([a-z0-9_\.-]+) 
+
 and ends with 
+
 .([a-z\.]{2,6})$. 
+
 I will explain what everything in the parathensis means throughout the tutorial. 
 ### Quantifiers
 Quanitifiers are used to determine how many times a specific charcater or group of characters need to be present in order to have a match. For the matching email regex ^([a-z0-9_\.-]+) you can see a quanitifier is the + at the end of the square brackets. This means it must contain at least one of the following in order to match: any lowercase letter a-z, any number 0-9, an underscore, period, or dash.
@@ -42,11 +46,17 @@ The first group to appear in the matching email code is ([a-z0-9_\.-]+). This fi
 Capturing is what is being captured in each paranthesis grouping. Whatever is inside these paranthesis will be captured by the regex for example the first part of our regex must have a lowercase letter a-z, a digit 0-9, an underscore, period, or a dash. The plus sign tells the entire first grouping that it must have at least one of these.
 ### Bracket Expressions
 Wihtin the parathensis are brackets that hold the parameters for the match. 
+
 [a-z0-9_\.-]
+
 For the first portion of the regex it is setting the match up to have a lowercase letter a-z, a digit 0-9, an underscore, period, or a dash. The plus sign after the brackets add to this to say it must have one.
+
 [\da-z\.-]
+
 For this second portion of the regex it is setting the match up to not start with a digit but have a lowercase letter a-z, period, and a dash. The plus sign after the brackets add to this to say it must have one.
+
 [a-z\.]
+
 The third portion of the regex is setting the match up to have a lowercase letter a-z and a period. The curly brackets {2,6} at the ending portion of our match tell the match it must have between 2-6 characters within that third portion of the regex. 
 ### Greedy and Lazy Match
 Greedy matches will consume as much as possible repeating as many times as it can. Lazy matches or adding a ? after a bracketed expression tells the code to search as few times as possible. The matching email code does not use these matching devices.
@@ -59,4 +69,5 @@ These are used to look for specific characters that are either followed by or be
 ## Author
 
 I am Andrea, I am currently enrolled in a coding bootcamp through UCLA extensions. I am getting certified in full stack web develop and hoped this helped you understand how regex are broken down to make your life easier while matching and validating your code.
+
 Github: https://github.com/andreaspencer
