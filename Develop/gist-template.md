@@ -59,4 +59,4 @@ These are used to look for specific characters that are either followed by or be
 ## Author
 
 I am Andrea, I am currently enrolled in a coding bootcamp through UCLA extensions. I am getting certified in full stack web develop and hoped this helped you understand how regex are broken down to make your life easier while matching and validating your code.
-Github: 
+Github: https://github.com/andreaspencer
