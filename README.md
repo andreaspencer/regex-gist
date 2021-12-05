@@ -4,7 +4,7 @@ The purpose of this gist is to explain what a regular expression is and how to u
 
 ## Summary
 
-The regex I will be walking you through is used to match emails. The regex code is: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/. One use for this code is to validate emails and making sure that an email follows the correct format.
+The regex I will be walking you through is used to match emails. The regex code is: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. One use for this code is to validate emails and making sure that an email follows the correct format.
 
 ## Table of Contents
 
